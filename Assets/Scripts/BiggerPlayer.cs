@@ -11,11 +11,14 @@ public class BiggerPlayer : MonoBehaviour
   public GameObject dotObject;
   private TextMeshProUGUI _text;
   private DotController _dotController;
+  private AudioSource _source;
 
   private void Start()
   {
     _text          = textObject.GetComponent<TextMeshProUGUI>();
     _dotController = dotObject.GetComponent<DotController>();
+    _source        = GetComponent<AudioSource>();
+    _source.volume = 0.3F;
   }
 
   private void OnTriggerEnter(Collider other)
@@ -25,6 +28,7 @@ public class BiggerPlayer : MonoBehaviour
       Destroy(other.gameObject);
       _point++;
       _text.text = "Score: " + _point;
+      _source.Play();
     }
     if (other.CompareTag("Enemy"))
     {

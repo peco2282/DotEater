@@ -1,17 +1,14 @@
+using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
-  [SerializeField] private GameObject player;
-
-  // Update is called once per frame
-  void Update()
+  private PlayerInput _input;
+  void Start()
   {
-    var position = player.transform.position;
-    transform.position = new Vector3(
-      position.x,
-      position.y + 10,
-      position.z
-    );
+    _input = GetComponent<PlayerInput>();
+    Debug.Log(GetComponent<StarterAssetsInputs>().look = new Vector2(10, 10));
   }
+
 }
