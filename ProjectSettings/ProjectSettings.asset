@@ -133,7 +133,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.2
+  bundleVersion: 0.3
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -723,7 +723,7 @@ PlayerSettings:
   webGLMaximumMemorySize: 3072
   webGLMemoryGrowthMode: 2
   webGLMemoryLinearGrowthStep: 16
-  webGLMemoryGeometricGrowthStep: 0.2
+  webGLMemoryGeometricGrowthStep: 0.4
   webGLMemoryGeometricGrowthCap: 512
   webGLPowerPreference: 2
   scriptingDefineSymbols:
