@@ -37,6 +37,7 @@ public class BiggerPlayer : MonoBehaviour
 
     if (_point == _dotController.GetChildLength())
     {
+      _source.Play();
       SceneManager.LoadScene("Win", LoadSceneMode.Single);
     }
   }
